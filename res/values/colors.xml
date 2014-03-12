@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_dialog">#B44f7aaa</color>
+    <color name="padding_dialog">#B4c5cee6</color>
+    <color name="green">#89c257</color>
+    <color name="green_pressed">#75b23f</color>
+    <color name="blue">#5dc2f1</color>
+    <color name="blue_pressed">#1892cb</color>
+    <color name="red">#ed5565</color>
+    <color name="red_pressed">#da4453</color>
+    <color name="yellow">#e8eff7</color>
+
+</resources>

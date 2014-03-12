@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_header"
+        android:orientation="horizontal" >
+ <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="back"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_home" />
+        <TextView
+            android:id="@+id/txv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="晒照片"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_huge" />
+
+        <TextView
+            android:id="@+id/txv_submit"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/btn_menu"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ed5565" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <EditText
+            android:id="@+id/edt_text"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/chat_background"
+            android:gravity="top"
+            android:hint="说些什么吧..."
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/txv_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="#ccaaaaaa"
+            android:text="0/100"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_smaller" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_background" >
+
+        <ImageView
+            android:id="@+id/img_add_pic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/img_pic_add" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/layout_pp"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/img_trigger"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_pp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/compose_publicbutton_background" />
+
+            <TextView
+                android:id="@+id/txv_pp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_pp"
+                android:text="公开"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textsize_smaller" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

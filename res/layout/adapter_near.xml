@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:background="@drawable/bg_dialoglistitem"
+        android:minHeight="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txv_index"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="3dp"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textsize_huge"
+                android:textStyle="bold|italic" >
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" >
+
+                <TextView
+                    android:id="@+id/txv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="大胖兔"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textsize_normal" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/img_pp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/txv_name"
+                    android:src="@drawable/icon_private" />
+
+                <TextView
+                    android:id="@+id/txv_customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_pp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/textsize_tiny" />
+
+                <TextView
+                    android:id="@+id/txv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="500m"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textsize_tiny" />
+
+                <RatingBar
+                    android:id="@+id/rb_rate"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txv_name"
+                    android:layout_marginLeft="2dp"
+                    android:numStars="5"
+                    android:rating="2.5" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_small" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/layout_vote"
+                android:layout_width="64dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_readdetail_normal" >
+
+                <ImageView
+                    android:id="@+id/img_vote"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/icon_for_enable" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txv_vote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@id/img_vote"
+                    android:gravity="center_vertical"
+                    android:text="1234"
+                    android:textColor="@android:color/darker_gray" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_brick"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/button_comment_enable" >
+
+                <TextView
+                    android:id="@+id/txv_brick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="1234"
+                    android:textColor="@android:color/darker_gray" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

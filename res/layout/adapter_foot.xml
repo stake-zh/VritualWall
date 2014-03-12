@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bg_skin"
+        android:minHeight="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txv_index"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bg_foot"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@color/green_pressed"
+                android:textSize="@dimen/textsize_normal"
+                android:textStyle="bold|italic" >
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" >
+
+                <TextView
+                    android:id="@+id/txv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="大胖兔"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textsize_normal" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/img_pp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/txv_name"
+                    android:src="@drawable/icon_private" />
+
+                <TextView
+                    android:id="@+id/txv_customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/img_pp"
+                    android:textColor="@color/blue_pressed"
+                    android:textSize="@dimen/textsize_tiny" />
+
+                <TextView
+                    android:id="@+id/txv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="2013-08-07 10:30"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/textsize_tiny" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="起"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textsize_tiny"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2013-08-07 10:30"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textsize_tiny" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="止"
+                android:textColor="#e8372e"
+                android:textSize="@dimen/textsize_tiny"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv_endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2013-08-13 17:27"
+                android:textColor="#e8372e"
+                android:textSize="@dimen/textsize_tiny" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textsize_tiny" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/layout_date_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/time_popup_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <com.hans.vw.activity.travel.wheel.WheelView
+            android:id="@+id/wheel_year"
+            style="@style/wheel_size"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+        <com.hans.vw.activity.travel.wheel.WheelView
+            android:id="@+id/wheel_month"
+            style="@style/wheel_size"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.hans.vw.activity.travel.wheel.WheelView
+            android:id="@+id/wheel_day"
+            style="@style/wheel_size"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_date_bg"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/time_ok"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

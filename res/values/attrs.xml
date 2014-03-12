@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Wheel">
+        <attr name="textSize" format="integer" />
+        <attr name="padding" format="integer" />
+        <attr name="labelOffset" format="integer" />
+        <attr name="additionalItemHeight" format="integer" />
+        <attr name="additionalItemSpace" format="integer" />
+    </declare-styleable>
+
+</resources>

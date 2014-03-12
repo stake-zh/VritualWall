@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp" >
+
+        <com.hans.vw.view.photoview.PhotoView
+            android:id="@+id/img_body"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txv_describe"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/img_body"
+            android:background="@color/red"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
